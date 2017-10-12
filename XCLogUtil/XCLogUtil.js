@@ -28,7 +28,7 @@ class LoggerUtil{
               'category': serverName,
               'filename': logFileName,
               'pattern': '-yyyy-MM-dd.log',
-              'levelFilter': 'DEBUG',
+              'levelFilter': 'INFO',
               'alwaysIncludePattern': true
           },{
               'type': 'file',
@@ -36,7 +36,6 @@ class LoggerUtil{
               'filename': errorFileName,
               'levelFilter': 'ERROR'
           }],
-          'replaceConsole': true,
       });
       this.log = log4js.getLogger(serverName);
       this.errorLog = log4js.getLogger(serverName + 'Error');
@@ -84,6 +83,10 @@ class LoggerUtil{
             this.log.fatal(message);
             this.errorLog.fatal(message);
         }
+    }
+
+    setLevel(level){
+        this.log.setLevel(level);
     }
 }
 

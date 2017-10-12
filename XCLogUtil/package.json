@@ -1,6 +1,6 @@
 {
   "name": "xclogutil",
-  "version": "2.2.2",
+  "version": "2.2.5",
   "description": "logutil for xiaoantech.",
   "main": "XCLogUtil.js",
   "scripts": {
@@ -16,5 +16,13 @@
     "log4js": "^1.1.1",
     "path": "^0.12.7"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingyuanwu/util.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dingyuanwu/util/issues"
+  },
+  "homepage": "https://github.com/dingyuanwu/util#readme"
 }
